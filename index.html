@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tracking Code -->
+    <script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src=`https://dev-assets.channelboost.com/scripts/cts.js?uid=${u}`;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","fb3525bd-f55f-460a-901c-be4144b99549");</script>
+</head>
+<body>
+    <h1>Welcome to My Campaign</h1>
+    
+    <button id="actionButton">Take Action</button>
+    <button id="subscribeButton">Subscribe</button>
+    <button id="shareButton">Share Campaign</button>
+
+    <script>
+        document.getElementById('actionButton').addEventListener('click', () => {
+            console.log('Action button clicked!');
+            alert('Action recorded!');
+            trackify.trackEvent("takeaction");
+        });
+
+        document.getElementById('subscribeButton').addEventListener('click', () => {
+            console.log('Subscribe button clicked!');
+            alert('Subscription recorded!');
+            trackify.trackEvent("Subscribe");
+        });
+
+        document.getElementById('shareButton').addEventListener('click', () => {
+            console.log('Share button clicked!');
+            alert('Campaign shared!');
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+Hi Team,
+
+We need your help to install the tracking code on our website to enable campaign tracking. Please follow the steps below:
+
+Step 1: Add the Tracking Code
+Copy and paste the following tracking snippet into the <head> section of our website or on all pages where tracking is required:
+
+<script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src=`https://dev-assets.channelboost.com/scripts/cts.js?uid=${u}`;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","fb3525bd-f55f-460a-901c-be4144b99549");</script>
+
+Step 2: Track User Actions
+To track specific actions on our site, trigger the following function whenever an action is completed:
+
+trackify.trackEvent("tracking_id")
+
+Replace "tracking_id" with the appropriate action identifier.
+
+Tracking Codes for Specific Actions:
+take action: trackify.trackEvent("takeaction")
+Subscribe: trackify.trackEvent("Subscribe")
+
+Please confirm once this is implemented or let me know if you have any questions.
+
+Thanks,
+Mary M
+ -->
