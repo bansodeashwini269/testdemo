@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,9 @@
 
     <!-- Tracking Code -->
     <script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src=`https://dev-assets.channelboost.com/scripts/cts.js?uid=${u}`;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","fb3525bd-f55f-460a-901c-be4144b99549");</script>
-<script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src="https://assets.channelboost.com/scripts/cts.js?uid=" + u;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","cdfbd34c-b0a2-4634-82f2-70bea862f5e6");</script>
-<script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src="https://dev-assets.channelboost.com/scripts/cts.js?uid=" + u;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","07fac8e7-0712-42b4-8583-0f11ab3e9c94");</script>
-<script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src="https://dev-assets.channelboost.com/scripts/cts.js?uid=" + u;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","970a9a20-4f0f-43d1-ac43-3d6e9d0e19db");</script>
+    <script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src="https://assets.channelboost.com/scripts/cts.js?uid=" + u;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","cdfbd34c-b0a2-4634-82f2-70bea862f5e6");</script>
+    <script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src="https://dev-assets.channelboost.com/scripts/cts.js?uid=" + u;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","07fac8e7-0712-42b4-8583-0f11ab3e9c94");</script>
+    <script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src="https://dev-assets.channelboost.com/scripts/cts.js?uid=" + u;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","970a9a20-4f0f-43d1-ac43-3d6e9d0e19db");</script>
 </head>
 <body>
     <h1>Welcome to My Campaign</h1>
@@ -24,7 +24,9 @@
             console.log('Action button clicked!');
             alert('Action recorded!');
             trackify.trackEvent("takeaction");
-            trackify.trackEvent("takeaction")
+            
+            // Redirect to the specified URL
+            window.location.href = "https://api-beta.channelboost.com/sp/setup/track/V5BGPQYy";
         });
 
         document.getElementById('subscribeButton').addEventListener('click', () => {
@@ -36,35 +38,8 @@
         document.getElementById('shareButton').addEventListener('click', () => {
             console.log('Share button clicked!');
             alert('Campaign shared!');
-            trackify.trackEvent("sharecampaign")
+            trackify.trackEvent("sharecampaign");
         });
     </script>
 </body>
 </html>
-
-<!-- 
-Hi Team,
-
-We need your help to install the tracking code on our website to enable campaign tracking. Please follow the steps below:
-
-Step 1: Add the Tracking Code
-Copy and paste the following tracking snippet into the <head> section of our website or on all pages where tracking is required:
-
-<script>(function(w,d,s,u){let j=d.createElement(s);j.async=true;j.src=`https://dev-assets.channelboost.com/scripts/cts.js?uid=${u}`;let f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);})(window,document,"script","fb3525bd-f55f-460a-901c-be4144b99549");</script>
-
-Step 2: Track User Actions
-To track specific actions on our site, trigger the following function whenever an action is completed:
-
-trackify.trackEvent("tracking_id")
-
-Replace "tracking_id" with the appropriate action identifier.
-
-Tracking Codes for Specific Actions:
-take action: trackify.trackEvent("takeaction")
-Subscribe: trackify.trackEvent("Subscribe")
-
-Please confirm once this is implemented or let me know if you have any questions.
-
-Thanks,
-Mary M
- -->
